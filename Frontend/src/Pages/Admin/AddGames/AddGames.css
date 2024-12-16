@@ -1,0 +1,18 @@
+#addgames__form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 80px auto;
+        gap: 20px;
+        input {
+            padding: 10px;
+        }
+        
+        button {
+            width: 30%;
+            padding: 15px;
+        }
+        textarea{
+            padding: 10px;
+        }
+}

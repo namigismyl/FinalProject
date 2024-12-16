@@ -1,0 +1,34 @@
+#shop {
+  background-color: #161616;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  
+  section{
+    .col-12,.col-6{
+      h2{
+        margin-bottom: 35px;
+          font-size: 32px;
+          color: #ffffff ;
+          font-weight: bolder;
+      }
+    }
+  }
+  .card {
+    border: none;
+    height: 100%;
+    background: black;
+    .card-body {
+      h3 {
+        font-size: 14px;
+        color: #ffffffcc;
+        line-height: 150%;
+        margin-bottom: 10px;
+      }
+      p {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 1rem;
+      }
+    }
+  }
+}

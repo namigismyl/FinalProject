@@ -1,0 +1,55 @@
+.accordion-item {
+  background: #161616;
+  border: none;
+  border-bottom: 1px solid #363535;
+  border-radius: 0 !important;
+  .accordion-button {
+    background: #161616;
+    box-shadow: none;
+    color: #ffffffcc;
+  }
+  .accordion-button {
+    padding: 12px 0;
+  }
+
+  .accordion-button[aria-expanded="true"] {
+    background: #161616;
+    color: #ffffffcc;
+  }
+  .accordion-button::after {
+    background-image: none;
+    text-align: end;
+}
+.accordion-button[aria-expanded="false"]::after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f078";
+    font-weight: 900;
+    color: blur;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  .accordion-button[aria-expanded="true"]::after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f077";
+    font-weight: 900;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  .accordion-body {
+    background: #161616;
+    padding: 12px 0;
+    ul{
+        list-style: disc;
+        margin-left: 15px !important;
+        li{
+            color: #ffffff99;
+            margin-bottom: 16px;
+        }
+    }
+    p {
+      color: #ffffff99;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  }
+}

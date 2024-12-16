@@ -1,0 +1,30 @@
+.rdr__additional__section{
+    h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .details__des__end{
+    white-space: pre-wrap;
+    font-size: 20px;
+    line-height: 30px;
+    color: #e8e8e8;
+    margin-bottom: 50px;
+  }
+    .rdr__additional__section__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 80%;
+            border-radius: 15px;
+        }
+        .mask-image{
+            mask-image: url("https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/828856a8c6ebb8fae3cd99a64c9dbbe3.png");
+            mask-size: cover;
+            
+        }
+    }
+}

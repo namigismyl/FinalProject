@@ -1,0 +1,13 @@
+{
+    "microFrontends": {
+        "@rockstargames/modules-core-header": [
+            {
+                "url": "https://media-rockstargames-com.akamaized.net/mfe6/prod/@rockstargames/modules-core-header/6.5.12/c8b88cff78e030777405e31be0182a4f0d5538b851f43e215ec2e85b0876653e/remote-entry.js",
+                "metadata": {
+                    "version": "6.5.12",
+                    "gitHead": "8d73dab77f0c5e603e6ffdc0c3bbc39431a3b8cd"
+                }
+            }
+        ]
+    }
+}

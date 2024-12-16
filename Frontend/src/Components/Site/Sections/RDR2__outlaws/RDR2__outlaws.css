@@ -1,0 +1,55 @@
+.rdr2__outlaws {
+  font-family: "RDR Lino Regular";
+  .rdr2__outlaws__back {
+    position: relative;
+    background: url("../../../../assets/img/Outlaws.png") repeat-x 50% / cover;
+    padding: 4rem 0 4rem 0;
+    h1 {
+      text-align: center;
+      font-size: 110px;
+      color: #fff;
+      line-height: 165px;
+      letter-spacing: -2.75px;
+    }
+  }
+  .rdr2__outlaws__back::before {
+    content: "";
+    position: absolute;
+    background: url("../../../../assets/img/Outlaws__before.png") no-repeat 50% /
+      cover;
+    width: 100%;
+    height: 100px;
+    top: -35px;
+  }
+  .rdr2__outlaws__back::after {
+    content: "";
+    position: absolute;
+    background: url("../../../../assets/img/Outlaws__before.png") no-repeat 50% /
+      cover;
+    width: 100%;
+    height: 100px;
+    bottom: -35px;
+    transform: rotate(180deg);
+  }
+  .rdr2__footer__back {
+      height: 301.31px;
+      position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    h2{
+        position: absolute;
+        top: 15%;
+        left: 41.55%;
+        font-size: 51.1112px;
+        color: #e8e8e8;
+        letter-spacing: -0.5px;
+    }
+    .rdr2__footer__esrb{
+        position: absolute;
+        left: 40%;
+        bottom: -20%;
+    }
+  }
+}

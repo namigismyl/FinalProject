@@ -1,0 +1,266 @@
+.rdr2__gangs{
+    padding: 80px;
+    font-family: "RDR Lino Regular";
+    p{
+        font-family: "Hapna Slab Serif W00 Bold";
+    }
+    .rdr2__gangs__heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        h1{
+            font-weight: 100;
+            font-size: 50px;
+            color: #fff;
+            line-height: 55px;
+            letter-spacing: -1.25px;
+        }
+        p{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+            text-align: center;
+        }
+        h2{
+            font-weight: 100;
+            font-size: 40px;
+            color: #fff;
+            line-height: 44px;
+            letter-spacing: -1px;
+        }
+        .rdr2__gangs__img{
+            margin-top: 80px;
+            margin-bottom: 120px;
+        }
+    }
+    .dutch{
+        position: relative;
+        .dutch__background{
+            position: relative;
+            background-image: url("../../../../assets/img/Dutch__background.png");
+            aspect-ratio: 1920/1080;
+            background-repeat: no-repeat;
+            background-size: cover;
+            img{
+                position: absolute;
+                bottom: 0;
+                width: 45%;
+            }
+            h2{
+                position: absolute;
+                right: 20px;
+                top: 60px;
+                font-size: 40px;
+                color: #fff;
+                line-height: 44px;
+                letter-spacing: -1px;
+            }
+            h3{
+                position: absolute;
+                bottom: 50%;
+                right: 10px;
+                font-weight: 100;
+                font-size: 36.9px;
+                color: #fff;
+                width: 50%;
+                text-align: center;
+                text-shadow: 2px 2px #000, 0 0 2px #000;
+                line-height: 39.6px;
+                letter-spacing: -0.9px;
+            }
+        }
+        .dutch__info{
+            background:url("../../../../assets/img/Dutch_footer.png") no-repeat 50% 0 / cover ;
+            padding: 4rem 1rem ;
+            
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: -27px;
+            width: 100%;
+            p{  
+                font-weight: 400;
+                width: 800px;
+                text-align: center;
+                font-size: 20px;
+                color: #fff;
+                line-height: 32px;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+    .hosea{
+        position: relative;
+        .hosea__background{
+            position: relative;
+            background-image: url("../../../../assets/img/Dutch__background.png");
+            aspect-ratio: 1920/1080;
+            background-repeat: no-repeat;
+            background-size: cover;
+            img{
+                position: absolute;
+                bottom: 0;
+                width: 60%;
+            }
+            h2{
+                position: absolute;
+                right: 20px;
+                top: 60px;
+                font-size: 40px;
+                color: #fff;
+                line-height: 44px;
+                letter-spacing: -1px;
+            }
+            h3{
+                position: absolute;
+                bottom: 50%;
+                right: 20px;
+                font-weight: 100;
+                font-size: 36.9px;
+                color: #fff;
+                width: 55%;
+                text-align: right;
+                text-shadow: 2px 2px #000, 0 0 2px #000;
+                line-height: 39.6px;
+                letter-spacing: -0.9px;
+            }
+        }
+        .hosea__info{
+            background:url("../../../../assets/img/Dutch_footer.png") no-repeat 50% 0 / cover ;
+            padding: 4rem 1rem ;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: -27px;
+            width: 100%;
+            p{  
+                font-weight: 400;
+                width: 800px;
+                text-align: center;
+                font-size: 20px;
+                color: #fff;
+                line-height: 32px;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+    .arthur{
+        position: relative;
+        .arthur__background{
+            position: relative;
+            background-image: url("../../../../assets/img/Dutch__background.png");
+            aspect-ratio: 1920/1080;
+            background-repeat: no-repeat;
+            background-size: cover;
+            img{
+                position: absolute;
+                bottom: 0;
+                width: 45%;
+            }
+            h2{
+                position: absolute;
+                right: 20px;
+                top: 60px;
+                font-size: 40px;
+                color: #fff;
+                line-height: 44px;
+                letter-spacing: -1px;
+            }
+            h3{
+                position: absolute;
+                bottom: 50%;
+                right: 20px;
+                font-weight: 100;
+                font-size: 36.9px;
+                color: #fff;
+                width: 55%;
+                text-align: right;
+                text-shadow: 2px 2px #000, 0 0 2px #000;
+                line-height: 39.6px;
+                letter-spacing: -0.9px;
+            }
+        }
+        .arthur__info{
+            background:url("../../../../assets/img/Dutch_footer.png") no-repeat 50% 0 / cover ;
+            padding: 4rem 1rem ;
+            
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: -27px;
+            width: 100%;
+            p{  
+                font-weight: 400;
+                width: 800px;
+                text-align: center;
+                font-size: 20px;
+                color: #fff;
+                line-height: 32px;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+    .john{
+        position: relative;
+        .john__background{
+            position: relative;
+            background-image: url("../../../../assets/img/Dutch__background.png");
+            aspect-ratio: 1920/1080;
+            background-repeat: no-repeat;
+            background-size: cover;
+            img{
+                position: absolute;
+                bottom: 0;
+                width: 45%;
+            }
+            h2{
+                position: absolute;
+                right: 20px;
+                top: 60px;
+                font-size: 40px;
+                color: #fff;
+                line-height: 44px;
+                letter-spacing: -1px;
+            }
+            h3{
+                position: absolute;
+                bottom: 50%;
+                right: 20px;
+                font-weight: 100;
+                font-size: 36.9px;
+                color: #fff;
+                width: 55%;
+                text-align: right;
+                text-shadow: 2px 2px #000, 0 0 2px #000;
+                line-height: 39.6px;
+                letter-spacing: -0.9px;
+            }
+        }
+        .john__info{
+            background:url("../../../../assets/img/Dutch_footer.png") no-repeat 50% 0 / cover ;
+            padding: 4rem 1rem ;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: -27px;
+            width: 100%;
+            p{  
+                font-weight: 400;
+                width: 800px;
+                text-align: center;
+                font-size: 20px;
+                color: #fff;
+                line-height: 32px;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+}

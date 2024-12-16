@@ -1,0 +1,15 @@
+.rdr2__aboutsec{
+    background: url("https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/62fd25d16605e42ee0b4d78313a91dac.jpg  ") no-repeat 50% / cover;
+    padding: 64px;
+    p{
+    line-height: 32px;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    font-family: "Hapna Slab Serif W00 Bold";
+
+    }
+}

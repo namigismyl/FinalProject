@@ -1,0 +1,105 @@
+.basket {
+  padding-top: 140px;
+  padding-bottom: 60px;
+  background-color: #161616;
+  .basket__title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+    tr{
+    border-top:1px solid  #e5e7eb44 ;
+    border-bottom: 1px solid  #e5e7eb44;
+        td {
+        background-color: transparent;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        img{
+            border-radius: 8px;
+        }
+        .basket__info{
+            padding-left: 14px;
+            .basket__text__heading {
+              display: flex;
+              justify-content: space-between;
+              a {
+                font-weight: 600;
+                font-size: 24px;
+                color: #ffffff;
+                line-height: 30px;
+              }
+              p {
+                font-weight: 600;
+                font-size: 24px;
+                color: #ffffff;
+                line-height: 30px;
+              }
+            }
+            .basket__text__body{
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              gap: 10px;
+              margin-top: 20px;
+            }
+            .basket__text__body__increase {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              justify-content: center;
+              background: #ffab00;
+              border-radius: 5px;
+              width: 85.13px;
+              
+              p {
+                  font-size: 16px;
+                  color: black;
+                  font-weight: bolder;
+                }
+                button {
+                background: #ffab00;
+                color: black;
+                border: none;
+                padding: 10px 10px;
+                
+              }
+            }
+        }
+        .basket__removeBtn {
+          padding: 10px 12px;
+          border: none;
+          font-size: 16px;
+          border-radius: 4px;
+          background-color: #dc3545;
+          color: #ffffff;
+        }
+      }
+
+    }
+    .subtotal__title{
+        span:first-child{
+            font-size: 18px;
+            font-weight: 400;
+            color: #ffffffcc;
+            line-height: 27px;
+        }
+        span:nth-child(2){
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffffcc;
+            line-height: 27px;
+
+        }
+        span:last-child{
+            font-size: 16px;
+            font-weight: bolder;
+            color: #ffffff;
+            line-height: 24px;
+
+        }
+    }
+}

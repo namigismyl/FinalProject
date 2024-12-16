@@ -1,0 +1,97 @@
+.newarrivals__cat{
+    padding-top: 140px;
+    padding-bottom: 60px;
+    background-color: #161616;
+    .sortByCol{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+        .sortBy{
+            background-color: #000000;
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.377);
+            p{
+                font-size: 0.688rem;
+                color:rgba(255, 255, 255, 0.425);
+                margin-bottom: 3px;
+                margin-left: 3px;
+            }
+            #sort{
+                border: none;
+                background: none;
+                color: #fff;
+                option{
+                    background: black;
+                }
+            }
+            #sort:focus-visible{
+                outline: none;
+            }
+
+        }
+    }
+    .shop__card__title{
+        color: #fff;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .card{
+        background-color: #000000;
+        h3{
+            color: #e8e8e8;
+            line-height: 125%;
+        }
+    }
+}
+/* Red dead essential category */
+.RDRE__cat{
+    padding-top: 140px;
+    padding-bottom: 60px;
+    background-color: #161616;
+    .sortByCol{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+        .sortBy{
+            background-color: #000000;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.377);
+            p{
+                font-size: 0.688rem;
+                color:rgba(255, 255, 255, 0.425);
+                margin-bottom: 3px;
+                margin-left: 3px;
+            }
+            #sort{
+                border: none;
+                background: none;
+                color: #fff;
+                
+                option{
+                    background: black;
+                }
+                
+            }
+            #sort:focus-visible{
+                outline: none;
+            }
+
+        }
+    }
+    .shop__card__title{
+        color: #fff;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .card{
+        background-color: #000000;
+        h3{
+            color: #e8e8e8;
+            line-height: 125%;
+        }
+    }
+}

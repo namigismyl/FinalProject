@@ -1,0 +1,83 @@
+.featuredG__container {
+  margin: 0 auto;
+  .featured__games__title{
+    margin-bottom: 2rem;
+    a{
+      line-height: 1.3;
+      font-size: 30px;
+      font-weight: bolder;
+      color: #ffffff;
+    }
+  }
+  .featured__games__gta6 {
+    margin-bottom: 35px;
+    .gta6__bigImg{
+      display: none;
+    }
+  }
+}
+.featuredGames__btn{
+  border: none ;
+  background: none;
+}
+
+
+/* Media area */
+@media only screen and (max-width: 1024px) {
+  .featured_games{
+    padding-top: 152px !important;
+    padding-bottom: 72px !important;
+  }
+  .viewMore__button{
+    a{
+      font-size: 18px;
+    }
+  }
+  .featured__games__title{
+    a{
+      font-size: 27px !important;
+    }
+  }
+  .gameCol{
+    width: 50%;
+    .featured__games__game{
+      width: 100%;
+
+    }
+    .rdr2{
+      margin-top: 24px ;
+    }
+    .rdro{
+      margin-top: 24px;
+    }
+    
+  }
+}
+@media only screen and (max-width: 786px) {
+  .viewMore__button{
+    a{
+      font-size: 16px;
+    }
+  }
+  .featured__games__title{
+    a{
+      font-size: 24px !important;
+    }
+  }
+  .featured__games__gta6{
+    margin-bottom: 24px !important;
+    .gta6__img{
+      display: none !important;
+    }
+    .gta6__bigImg{
+      display: block !important;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .featured_games{
+    padding-top: 80px !important;
+    padding-bottom: 45px !important;
+  }
+}
+

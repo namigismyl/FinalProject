@@ -1,0 +1,155 @@
+#shop__details {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #161616;
+  .shop__details__slider {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 80px;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    .layout {
+      width: 600px;
+      margin: 10px auto;
+      position: relative;
+      a {
+        color: #666;
+      }
+    }
+    .slide {
+      display: none;
+      li {
+        list-style: none;
+      }
+      &.slick-initialized {
+        display: block;
+      }
+    }
+    .slick-dots {
+      margin-left: -5px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 5px;
+
+      li {
+        list-style: none;
+        width: 101px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .slick-prev {
+      left: -50px;
+    }
+    .slick-next {
+      right: -50px;
+    }
+    .slick-list {
+      width: 100%;
+      .slick-slide {
+        width: 100%;
+        width: 600px !important;
+        div {
+          margin-bottom: 10px;
+          width: 100% !important;
+          li {
+            width: 100% !important;
+            img {
+              width: 100%;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+    .rockstar__games__text {
+      padding: 10px 80px 0px;
+      h1 {
+        line-height: 125%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(255 255 255);
+        letter-spacing: normal;
+      }
+      .rockstar__games__text__des {
+        margin-top: 1rem;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 130%;
+        color: rgb(255 255 255 / 80%);
+      }
+      .rockstar__games__text__price {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: 1rem;
+        line-height: 150%;
+        color: rgb( 255, 255, 255 );
+      }
+      
+      .details__info{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 4px;
+        span{
+            color: rgb(255 255 255 / 80%);
+            font-size: 12px;
+            letter-spacing: 0.05rem;
+        }
+        img{
+            width: 14.67px;
+        }
+      }
+
+    }
+}
+.faq__details{
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    .faq__title{
+        margin-bottom: 25px;
+        h2{
+            font-size: 32px;
+            color: #ffffff;
+            font-weight: bolder;
+
+        }
+    }
+}
+.shop__details__products{
+  padding-top: 100px;
+  a{
+    text-decoration: none !important;
+  }
+  .card {
+    border: none;
+    height: 100%;
+    background: black;
+    .card-body {
+      h3 {
+        font-size: 14px;
+        color: #ffffffcc;
+        line-height: 150%;
+        margin-bottom: 10px;
+      }
+      p {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.shop__details__products__title{
+  h2{
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-bottom: 30px;
+  }
+}
+}

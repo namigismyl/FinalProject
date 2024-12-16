@@ -1,0 +1,131 @@
+.herosec {
+  padding-top: 80px;
+  background-color: #000;
+  .heroSec__container {
+    width: 100%;
+    .heroSec__row {
+      margin: 0;
+      .heroSec__col1 {
+        padding: 0;
+        width: 70%;
+        img {
+          width: 100%;
+        }
+      }
+      .heroSec__col2 {
+        width: 30%;
+        .heroSec__info {
+          padding: 5rem 2rem;
+          p {
+            font-size: 15px;
+            color: #e8e8e8;
+            font-weight: 700;
+            line-height: 1.6;
+            margin-bottom: 10px;
+          }
+          h2 {
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-bottom: 40px;
+          }
+          button {
+            background: transparent;
+            border: 1px solid #fff;
+            font-size: 20px;
+            border-radius: 0.25rem;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 700;
+            line-height: 100%;
+            padding: 20px 60px;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+          }
+          button:hover {
+            background: #fcaf17;
+            border-color: #fcaf17;
+            color: #161616;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media Area */
+@media only screen and (min-width: 2200px) {
+  .heroSec__info {
+    padding: 176px !important;
+  }
+  .heroSec__col1 {
+    width: 60% !important;
+  }
+  .heroSec__col2 {
+    width: 40% !important;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .heroSec__info {
+    h2 {
+      font-size: 55px !important;
+    }
+    button {
+      padding: 22px 66px !important;
+      font-size: 22px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .heroSec__col1 {
+    width: 100% !important;
+  }
+  .heroSec__col2 {
+      width: 100% !important;
+    .heroSec__info{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px !important;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  
+  .heroSec__col2 {
+    .heroSec__info{
+     
+        padding: 72px 36px !important;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  
+  .heroSec__col2 {
+    .heroSec__info{
+     
+        padding: 32px !important;
+    }
+  }
+}
+@media only screen and (max-width: 560px) {
+  
+  .heroSec__col2 {
+    .heroSec__info{
+      .heroSec__title{
+        p{
+          font-size: 12px !important;
+        }
+        h2{
+          font-size: 32px !important;
+        }
+      }
+      flex-direction: column;
+      button{
+        width: 100%;
+        font-size: 16px !important;
+        padding: 16px 48px !important;
+      }
+    }
+  }
+}

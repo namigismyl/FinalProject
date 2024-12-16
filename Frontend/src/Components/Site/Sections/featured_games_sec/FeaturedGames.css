@@ -1,0 +1,15 @@
+.featured_games {
+  padding-top: 160px;
+  padding-bottom: 80px;
+  img {
+    transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1),
+      box-shadow 0.3s cubic-bezier(0, 0, 0.5, 1);
+    border-radius: 8px;
+    width: 100%;
+  }
+  img:hover {
+    box-shadow: 0 30px 40px -25px #000;
+    transform: scale(1.025);
+    overflow: hidden;
+  }
+}
