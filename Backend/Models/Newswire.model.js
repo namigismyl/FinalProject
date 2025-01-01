@@ -1,67 +1,49 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 const News = mongoose.model("News", new mongoose.Schema({
-    image:{
-        type:String,
-        require:true
+    images: {
+        type: [String],
+        default: [],
+        required: true,
     },
-    category:{
-        type:String,
-        require:true,
+    category: {
+        type: String,
+        required: true,
     },
-    title:{
-        type:String,
-        require:true
+    title: {
+        type: String,
+        required: true,
     },
-    time:{
-        type:String,
-        require:true
+    time: {
+        type: String,
+        required: true,
     },
-    detailsImg:{
-        type:String,
-        require:false
+    detailsHeadDesc: {
+        type: String,
+        required: false,
     },
-    detailsHeadDesc:{
-        type:String,
-        require:false
+    detailsMainDes: {
+        type: String,
+        required: false,
     },
-    detailsMainDes:{
-        type:String,
-        require:false
+    detailSecTitle: {
+        type: String,
+        required: false,
     },
-    // maindes2:{
-    //     type:String,
-    //     require:false
-    // },
-    // maindes3:{
-    //     type:String,
-    //     require:false
-    // },
-    detailSecImg:{
-        type:String,
-        require:false
+    detailSecDes: {
+        type: String,
+        required: false,
     },
-    detailSecTitle:{
-        type:String,
-        require:false
+    detailRdTitle: {
+        type: String,
+        required: false,
     },
-    detailSecDes:{
-        type:String,
-        require:false
+    detailRdDes: {
+        type: String,
+        required: false,
     },
-    detailRdImg:{
-        type:String,
-        require:false
-    },
-    detailRdTitle:{
-        type:String,
-        require:false
-    },
-    detailRdDes:{
-        type:String,
-        require:false
-    }
-
-}))
-module.exports = { News }
-
-
+    // isActive: { // Yeni sahə əlavə etdik
+    //     type: Boolean,
+    //     default: true,
+    // }
+}));
+module.exports = { News };

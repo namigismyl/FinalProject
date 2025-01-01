@@ -23,6 +23,7 @@ import RDR2 from "../Pages/Site/RDR2/RDR2";
 import ScrollToTop from "../Components/Site/ScrollToTop/ScrollToTop";
 import NewArrivals from "../Pages/Site/ShopCategory/NewArrivals";
 import RDRE from "../Pages/Site/ShopCategory/RDRE";
+import News__det from "../Pages/Admin/Details/News__det/News__det";
 
 const ROUTES = [
   {
@@ -124,6 +125,10 @@ const ROUTES = [
         path: "addnews",
         element: <AddNews />,
       },
+      {
+        path:"newswire/details/:id",
+        element:<News__det/>
+      }
     ],
   },
 ];

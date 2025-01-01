@@ -2,10 +2,10 @@
 const express = require("express")
 const {NewswireController} =require("../Controllers/Newswire.controller")
 const router=express.Router()
-const upload = require("../Middlewares/multer.middleware")
+const uploads = require("../Middlewares/multer.middleware")
 router.get("/",NewswireController.getAll)
 router.get("/:id",NewswireController.getById)
-router.post("/",upload.single("image"),NewswireController.add)
+router.post("/",uploads.array("images",10),NewswireController.add)
 router.delete("/:id",NewswireController.delete)
-router.put("/:id",NewswireController.edit)
+router.put("/:id",uploads.array("images",10),NewswireController.edit)
 module.exports = router

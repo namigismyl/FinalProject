@@ -28,10 +28,6 @@
     url("https://db.onlinewebfonts.com/t/0b4832910f8c62e341d74bcc819c9cb3.svg#Hapna Slab Serif W00 Bold")
       format("svg");
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html,
 body,
@@ -303,8 +299,6 @@ body {
       color: #e8e8e8d7;
       margin-bottom: 70px;
     }
-
-    
   }
   .esrb__section {
     display: flex;
@@ -361,9 +355,17 @@ body {
   .general__admin {
     width: calc(100% - 307.2px);
     margin-left: auto;
+    background-color: #000000;
+    min-height: 100vh;
+    h2 {
+      color: #ffffff;
+    }
+    table {
+      margin: 0 auto;
+    }
     tbody {
       th {
-        vertical-align: middle;
+        vertical-align: middle ;
       }
       td {
         vertical-align: middle;

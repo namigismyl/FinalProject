@@ -14,7 +14,7 @@ const Card = ({ newsCard }) => {
       <Link to={detailPath}>
         <div className="card" style={{ width: "100%" }}>
           <img
-            src={newsCard.image}
+            src={newsCard.images?.[0]}
             className="card-img-top"
             alt={newsCard.title}
           />

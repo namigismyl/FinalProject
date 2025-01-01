@@ -1,18 +1,11 @@
-const multer = require('multer');
-
-// Set up storage for uploaded files
+const multer = require("multer")
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads/');
+    cb(null, "./uploads")
   },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + '-' + file.originalname);
+    cb(null, `${Date.now()}-${file.originalname}`)
   }
-});
-
-// Create the multer instance
-const upload = multer({ storage: storage });
-
-// Export the upload middleware
-module.exports = upload;
-
+})
+const uploads = multer({ storage })
+module.exports = uploads

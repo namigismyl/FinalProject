@@ -1,34 +1,40 @@
 import React, { useContext } from "react";
 import { Formik } from "formik";
-import MainContext from "../../../Context/Context";
 import axios from "axios";
-import "./AddNews.css"
+import MainContext from "../../../Context/Context";
 import { BASE_URL } from "../../../Services/api/constants";
+import "./AddNews.css";
+
 const AddNews = () => {
   const { setNews } = useContext(MainContext);
+
+  const initialValues = {
+    images: [],  
+    category: "",
+    time: "",
+    title: "",
+    detailsHeadDesc: "",
+    detailsMainDes: "",
+    detailSecTitle: "",
+    detailSecDes: "",
+    detailRdTitle: "",
+    detailRdDes: "",
+  };
 
   return (
     <div className="general__admin">
       <Formik
-        initialValues={{
-          image: null,
-          category: "",
-          time: "",
-          title: "",
-          detailsImg: null,
-          detailsHeadDesc: "",
-          detailsMainDes: "",
-          detailSecImg: null,
-          detailSecTitle: "",
-          detailSecDes: "",
-          detailRdImg: null,
-          detailRdTitle: "",
-          detailRdDes: "",
-        }}
+        initialValues={initialValues}
         onSubmit={(values, { setSubmitting }) => {
           const formData = new FormData();
-          Object.keys(values).forEach((key) => {
-            formData.append(key, values[key]);
+          Object.entries(values).forEach(([key, value]) => {
+            if (key === "images") {
+              Array.from(value).forEach((file) => {
+                formData.append("images", file);
+              });
+            } else {
+              formData.append(key, value);
+            }
           });
 
           axios
@@ -57,113 +63,78 @@ const AddNews = () => {
           handleSubmit,
           isSubmitting,
         }) => (
-          <form id="news__form" onSubmit={handleSubmit} style={{display:"flex",flexDirection:"column",width:"50%",margin:"60px auto 0",gap:"15px"}}> 
-            <input
-              type="file"
-              name="image"
-              placeholder="image"
-              onChange={(event) => {
-                setFieldValue("image", event.currentTarget.files[0]);
-              }}
-              onBlur={handleBlur}
-            />
-            <input
-              type="text"
-              name="category"
-              placeholder="Category"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.category}
-            />
-            <input
-              type="text"
-              name="title"
-              placeholder="Title"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.title}
-            />
-            <input
-              type="text"
-              name="time"
-              placeholder="Date"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.time}
-            />
-            <input
-              type="text"
-              name="detailsImg"
-              placeholder="details image"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.detailsImg}
-            />
-            <input
-              type="text"
-              name="detailsHeadDesc"
-              placeholder="Details Title"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.detailsHeadDesc}
-            />
-            <textarea
-              name="detailsMainDes"
-              placeholder="Details text"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              rows={5}
-              value={values.detailsMainDes}
-            />
-            <input
-              type="text"
-              name="detailSecImg"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              placeholder="details second image"
-              value={values.detailSecImg}
-            />
-            <input
-              type="text"
-              name="detailSecTitle"
-              placeholder="Details second title"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.detailSecTitle}
-            />
-            <textarea
-              name="detailSecDes"
-              placeholder="Details second text"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.detailSecDes}
-              rows={5}
-            />
-            <input
-              type="text"
-              name="detailRdImg"
-              placeholder="details third image"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.detailRdImg}
-            />
-            <input
-              type="text"
-              name="detailRdTitle"
-              placeholder="Details third title"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.detailRdTitle}
-            />
-            <textarea
-              name="detailRdDes"
-              placeholder="Details third text"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.detailRdDes}
-              rows={5}
+          <form
+            id="news__form"
+            onSubmit={handleSubmit}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: "50%",
+              margin: "0 auto",
+              paddingTop:"60px",
+              gap: "15px",
+            }}
+          >
+            {/* Dinamik input sahələri */}
+            {Object.keys(initialValues).map((key) => {
+              if (key === "images") {
+                // 'images' sahəsi üçün fayl yükləmə inputu
+                return (
+                  <input
+                    key={key}
+                    type="file"
+                    name={key}
+                    accept="images/*"
+                    onChange={(e) => {
+                      setFieldValue("images", e.currentTarget.files);
+                    }}
+                    multiple
+                  />
+                );
+              }
 
-            />
+              // Mətn və başlıq sahələri üçün 'text' input
+              if (key.includes("Des") || key.includes("Title")) {
+                if (key.includes("Des")) {
+                  return (
+                    <textarea
+                      key={key}
+                      name={key}
+                      placeholder={key.replace(/([A-Z])/g, " $1").toUpperCase()}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values[key]}
+                      rows={5}
+                    />
+                  );
+                } else {
+                  return (
+                    <input
+                      key={key}
+                      type="text"
+                      name={key}
+                      placeholder={key.replace(/([A-Z])/g, " $1").toUpperCase()}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values[key]}
+                    />
+                  );
+                }
+              }
+
+              return (
+                <input
+                  key={key}
+                  type="text"
+                  name={key}
+                  placeholder={key.replace(/([A-Z])/g, " $1").toUpperCase()}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values[key]}
+                />
+              );
+            })}
+
             <button type="submit" disabled={isSubmitting}>
               Submit
             </button>

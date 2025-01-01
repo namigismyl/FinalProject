@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import RGLogo from "../../../assets/img/RG__footer.png"
 const Footer = () => {
   return (
     <footer>

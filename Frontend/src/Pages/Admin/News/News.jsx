@@ -3,11 +3,13 @@ import "./News.css";
 import MainContext from "../../../Context/Context";
 import axios from "axios";
 import { BASE_URL } from "../../../Services/api/constants";
+import { Link } from "react-router-dom";
+
 const News = () => {
   const { news, setNews } = useContext(MainContext);
   return (
     <div className="general__admin">
-      <h2 style={{textAlign:"center",fontSize:"30px",marginTop:"40px",marginBottom:"40px"}}>Newswire</h2>
+      <h2 style={{textAlign:"center",fontSize:"30px",paddingTop:"40px",paddingBottom:"30px"}}>Newswire</h2>
       <div
         className="news__admin"
         style={{
@@ -18,8 +20,8 @@ const News = () => {
         }}
       >
         <table
-          className="table table-dark  newsTable" 
-          style={{ margin: "auto", width: "95%"}}
+          className="table table-dark newsTable" 
+          style={{ width: "80%"}}
         >
           <thead>
             <tr>
@@ -28,7 +30,8 @@ const News = () => {
               <th scope="col">Category</th>
               <th scope="col">Title</th>
               <th scope="col">Date</th>
-              <th scope="col">Delete</th>
+              <th scope="col">Details</th>
+              <th scope="col">Activate/Deactivate</th> 
             </tr>
           </thead>
           <tbody>
@@ -38,23 +41,22 @@ const News = () => {
                 <tr>
                   <th scope="row">{newsAdminItem._id}</th>
                   <td>
-                    <img
-                      style={{ width: "60px" }}
-                      src={newsAdminItem.image}
-                      alt=""
-                    />
+                    <img src={newsAdminItem.images?.[0]} width="60px" alt="" />
                   </td>
                   <td>{newsAdminItem.category}</td>
                   <td>{newsAdminItem.title}</td>
                   <td>{newsAdminItem.time}</td>
                   <td>
-                    <button
-                      className="btn btn-danger"
-                      onClick={()=>axios.delete(`${BASE_URL}/newswire/${newsAdminItem._id}`).then(res=>{
-                        setNews(res.data)
-                      })}
+                    <Link to={`/admin/newswire/details/${newsAdminItem._id}`}
+                      className="btn btn-warning"
                     >
-                      Delete
+                      Details
+                    </Link>
+                  </td>                  
+                  <td>
+                    <button className="btn btn-danger"
+                    >
+                      Deactivated
                     </button>
                   </td>
                 </tr>
@@ -67,4 +69,5 @@ const News = () => {
     </div>
   );
 };
+
 export default News;

@@ -399,13 +399,11 @@
     background: transparent;
   }
   .sidebar-brand{
-
     background:  #FFAB00;
   }
   .sidebar-wrapper {
-    background: #000000;
+    background: #0B0B0B;
     width: 20%;
-    ;
   }
   
   .sidebar-wrapper .sidebar-header,
@@ -427,7 +425,7 @@
   .sidebar-wrapper .sidebar-brand > a,
   .sidebar-wrapper .sidebar-menu ul li a,
   .sidebar-footer > a {
-    color: #818896;
+    color: #ffffffcb;
   }
   
   .sidebar-wrapper .sidebar-menu ul li:hover > a,
@@ -435,7 +433,8 @@
   .sidebar-wrapper .sidebar-header .user-info,
   .sidebar-wrapper .sidebar-brand > a:hover,
   .sidebar-footer > a:hover i {
-    color: #b8bfce;
+    color: #FFAB00;
+
   }
   
   .page-wrapper.toggled #close-sidebar {
@@ -454,19 +453,19 @@
     a:hover:before,
   .sidebar-wrapper .sidebar-search input.search-menu:focus + span,
   .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
-    color: #16c7ff;
-    text-shadow: 0px 0px 10px rgba(22, 199, 255, 0.5);
+    color: #FFAB00;
+    text-shadow: 0px 0px 10px rgba(255, 248, 248, 0.581);
   }
   
   .sidebar-wrapper .sidebar-menu ul li a i,
   .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
   .sidebar-wrapper .sidebar-search input.search-menu,
   .sidebar-wrapper .sidebar-search .input-group-text {
-    background: #3a3f48;
+    background: black;
   }
   
   .sidebar-wrapper .sidebar-menu .header-menu span {
-    color: #6c7b88;
+    color: #fafdffbb;
   }
   
   .sidebar-footer {

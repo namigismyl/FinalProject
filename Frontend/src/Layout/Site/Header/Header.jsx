@@ -143,7 +143,7 @@ const Header = () => {
                   filteredNews.map((item,index)=>(
                     <div className="search-dropdown-item search-info-item" key={index}>
                       <div className="search-info-item-text">
-                      <img src={item.image} alt="" />
+                      <img src={item.images[0]} alt="" />
                       <p>{item.title}</p>
                       </div>
                       <Link to={getDetailPath(item.category,item._id)}  onClick={handleCloseClick}>

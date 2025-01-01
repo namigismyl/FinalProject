@@ -8,7 +8,7 @@ const Addional_Sec = ({item}) => {
         <div className="row">
         <div className="col-12">
           <div className="rdr__additional__section__img" >
-          <img src={item.detailSecImg} className='mask-image' width={"80%"} alt="" />
+          <img src={item.images?.length<=3 ? item.images?.[1] :item.images?.[2]} className='mask-image' width={"80%"} alt="" />
           </div>
         </div>
         <div className="row generalRow">
@@ -24,7 +24,7 @@ const Addional_Sec = ({item}) => {
         <div className="row">
         <div className="col-12">
           <div className="rdr__additional__section__img" >
-          <img src={item.detailRdImg} width={"80%"} alt="" />
+          <img src={item.images?.length<=3 ? item.images?.[2] :item.images?.[3]} width={"80%"} alt="" />
           </div>
         </div>
         <div className="row generalRow">

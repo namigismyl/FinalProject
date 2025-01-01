@@ -20,11 +20,12 @@ const NewswireController = {
     },
     add: async (req, res) => {
         try {
-            const newNews = new News({ ...req.body,image: "http://localhost:3000/uploads/" + req.file.filename})
+            
+            const images = req.files.map(file => "http://localhost:3000/uploads/" + file.filename)
+            const newNews = new News({...req.body,images})
             await newNews.save()
             const target = await News.find()
             res.send(target)
-            // res.send(req.file)
         } catch (err) {
             res.status(404).send(err)
         }
@@ -51,8 +52,20 @@ const NewswireController = {
             res.status(404).send(err)
 
         }
-    }
+    },
+    // toggleActivation: async (req, res) => {
+    //     try {
+    //         const { id } = req.params;
+    //         const newsItem = await News.findById(id);
+    //         const newStatus = !newsItem.isActive; // Əgər aktivdirsə, deaktiv edirik və əksinə
+    //         await News.findByIdAndUpdate(id, { isActive: newStatus });
+    //         const target = await News.find();
+    //         res.send(target);
+    //     } catch (err) {
+    //         res.status(404).send(err);
+    //     }
+    // }
+};
 
-}
 module.exports = { NewswireController }
 

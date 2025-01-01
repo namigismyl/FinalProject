@@ -8,7 +8,7 @@ const Main_Sec = ({item}) => {
         <div className="row">
         <div className="col-12">
           <div className="rdr__main__section__img" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-          <img style={{width:"60%"}} src={item.detailsImg} alt="" />
+          <img style={{width:"60%"}} src={item.images?.length<=3 ? item.images?.[0] :item.images?.[1]} alt="" />
           </div>
         </div>
         <div className="row generalRow">

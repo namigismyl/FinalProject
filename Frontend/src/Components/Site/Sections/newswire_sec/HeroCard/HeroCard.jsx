@@ -8,7 +8,7 @@ const HeroCard = ({ newsitem, getDetailPath }) => {
     <div className="row heroSec__row newswire__herosec__row">
       <div className="col-9 heroSec__col1 newswire__herosec__col1">
         <Link to={detailPath}>
-          <img src={newsitem.image} alt={newsitem.title} />
+          <img src={newsitem.images?.length<=3 ? newsitem.images?.[0]  :newsitem.images?.[1]} alt={newsitem.title} />
         </Link>
       </div>
 

@@ -5,8 +5,9 @@ import { BASE_URL } from '../../../Services/api/constants'
 const Magazine = () => {
   const {products,setProducts,games,setGames}=useContext(MainContext)
   return (
-    <div className='general__admin'>
-      <h2 style={{textAlign:"center",marginBottom:"40px",marginTop:"40px",fontSize:"30px"}}>Games</h2>
+    // style={{backgroundColor:"#0B0B0B"}}
+    <div className='general__admin' >
+      <h2 style={{textAlign:"center",padding:"40px 0 40px 0",fontSize:"30px"}}>Games</h2>
       <table
           className="table table-dark gamesTable" 
           style={{ margin: "auto", width: "80%"}}
